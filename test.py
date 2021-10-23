@@ -11,6 +11,7 @@ DATA_AUG={}
 
 net = NetworkModel(NET_CFG, True)
 net.to('cuda:0')
+
 train_data = DataManager(
     data_path = TRAIN_FILE,
     CUDA=AUG_CUDA,
